@@ -5,8 +5,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Catalyst
 %define	pnam	Plugin-Session-Store-File
-Summary:	Catalyst::Plugin::Session::Store::File - File storage backend for session data.
-#Summary(pl):	
+Summary:	Catalyst::Plugin::Session::Store::File - File storage backend for session data
+Summary(pl):	Catalyst::Plugin::Session::Store::File - przechowywanie danych sesji w pliku
 Name:		perl-Catalyst-Plugin-Session-Store-File
 Version:	0.04
 Release:	1
@@ -15,6 +15,7 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	2796715237ffcc1c7b6ca7065d4a1792
+URL:		http://search.cpan.org/dist/Catalyst-Plugin-Session-Store-File/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
@@ -31,8 +32,11 @@ Catalyst::Plugin::Session::Store::File is an easy to use storage
 plugin for Catalyst that uses an simple file to act as a shared memory
 interprocess cache. It is based on Cache::FileCache.
 
-# %description -l pl
-# TODO
+%description -l pl
+Catalyst::Plugin::Session::Store::File to ³atwa w u¿yciu wtyczka
+przechowywania danych dla Catalysta u¿ywajaca zwyk³ego pliku jako
+pamiêci podrêcznej wspó³dzielonej miêdzy procesami. Jest oparta na
+Cache::FileCache.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
