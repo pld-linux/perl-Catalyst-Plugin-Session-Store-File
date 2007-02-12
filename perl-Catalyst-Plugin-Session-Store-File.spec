@@ -6,7 +6,7 @@
 %define	pdir	Catalyst
 %define	pnam	Plugin-Session-Store-File
 Summary:	Catalyst::Plugin::Session::Store::File - File storage backend for session data
-Summary(pl):	Catalyst::Plugin::Session::Store::File - przechowywanie danych sesji w pliku
+Summary(pl.UTF-8):   Catalyst::Plugin::Session::Store::File - przechowywanie danych sesji w pliku
 Name:		perl-Catalyst-Plugin-Session-Store-File
 Version:	0.07
 Release:	1
@@ -32,10 +32,10 @@ Catalyst::Plugin::Session::Store::File is an easy to use storage
 plugin for Catalyst that uses an simple file to act as a shared memory
 interprocess cache. It is based on Cache::FileCache.
 
-%description -l pl
-Catalyst::Plugin::Session::Store::File to ³atwa w u¿yciu wtyczka
-przechowywania danych dla Catalysta u¿ywajaca zwyk³ego pliku jako
-pamiêci podrêcznej wspó³dzielonej miêdzy procesami. Jest oparta na
+%description -l pl.UTF-8
+Catalyst::Plugin::Session::Store::File to Å‚atwa w uÅ¼yciu wtyczka
+przechowywania danych dla Catalysta uÅ¼ywajaca zwykÅ‚ego pliku jako
+pamiÄ™ci podrÄ™cznej wspÃ³Å‚dzielonej miÄ™dzy procesami. Jest oparta na
 Cache::FileCache.
 
 %prep
