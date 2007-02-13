@@ -6,7 +6,7 @@
 %define	pdir	Catalyst
 %define	pnam	Plugin-Session-Store-File
 Summary:	Catalyst::Plugin::Session::Store::File - File storage backend for session data
-Summary(pl.UTF-8):   Catalyst::Plugin::Session::Store::File - przechowywanie danych sesji w pliku
+Summary(pl.UTF-8):	Catalyst::Plugin::Session::Store::File - przechowywanie danych sesji w pliku
 Name:		perl-Catalyst-Plugin-Session-Store-File
 Version:	0.07
 Release:	1
