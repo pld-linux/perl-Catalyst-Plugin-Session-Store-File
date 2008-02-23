@@ -8,13 +8,13 @@
 Summary:	Catalyst::Plugin::Session::Store::File - File storage backend for session data
 Summary(pl.UTF-8):	Catalyst::Plugin::Session::Store::File - przechowywanie danych sesji w pliku
 Name:		perl-Catalyst-Plugin-Session-Store-File
-Version:	0.10
+Version:	0.13
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ea6843d8969c8416f0608fcbd625dac9
+# Source0-md5:	f1d2d3ed5ef2f800df5e7518a57ea1e1
 URL:		http://search.cpan.org/dist/Catalyst-Plugin-Session-Store-File/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -42,7 +42,7 @@ Cache::FileCache.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL \
+%{__perl} -MExtUtils::MakeMaker -we 'WriteMakefile(NAME=>"Catalyst::Plugin::Session::Store::File")' \
 	INSTALLDIRS=vendor
 %{__make}
 
