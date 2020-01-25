@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define	pdir	Catalyst
 %define	pnam	Plugin-Session-Store-File
 Summary:	Catalyst::Plugin::Session::Store::File - File storage backend for session data
